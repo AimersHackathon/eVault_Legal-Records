@@ -1,15 +1,15 @@
+/* CaseRegistration.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ccc; /* Gray background color for the sides */
+    background-color: #f0ecec; /* Gray background color for the sides */
     display: relative;
     justify-content: center;
     align-items: center;
     height: 100vh;
     overflow: hidden; /* Prevent scrolling */
 }
-
 .a4-sheet1 {
     width: 13cm; /* A4 width */
     height: 17cm; /* A4 height */
@@ -19,7 +19,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: -1;
 }
 
 .a4-sheet2 {
@@ -99,6 +99,48 @@ body {
     margin-left: -6.5cm; /* Half of the width */
     margin-top: -8.5cm; /* Half of the height */
 }
+.a4-sheet1 {
+    width: 13cm; /* A4 width */
+    height: 17cm; /* A4 height */
+    background-color: white; /* White paper color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow for the paper */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.a4-sheet2 {
+    width: 13cm; /* A4 width */
+    height: 17cm; /* A4 height */
+    background-color: white; /* White paper color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow for the paper */
+    position: absolute;
+    transform: rotate(2deg);
+    z-index: -1; /* 2-degree rotation */
+    
+    /* Centering using rotation */
+    left: 50%;
+    top: 50%;
+    margin-left: -6.5cm; /* Half of the width */
+    margin-top: -8.5cm; /* Half of the height */
+}
+.a4-sheet3 {
+    width: 13cm; /* A4 width */
+    height: 17cm; /* A4 height */
+    background-color: white; /* White paper color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow for the paper */
+    position: absolute;
+    transform: rotate(-2deg);
+    z-index: -1; /* 2-degree rotation */
+    
+    
+    /* Centering using rotation */
+    left: 50%;
+    top: 50%;
+    margin-left: -6.5cm; /* Half of the width */
+    margin-top: -8.5cm; /* Half of the height */
+}
 .a4-sheet7 {
     width: 13cm; /* A4 width */
     height: 17cm;  /* A4 height */
@@ -114,101 +156,72 @@ body {
     margin-left: -6.5cm; /* Half of the width */
     margin-top: -8.5cm; /* Half of the height */
 }
-
-.login-container,
-.registration-container {
-    position: absolute;
+.bck{
+    display: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px 20px; /* Button background color */
+    background-color: #0e0e0e;
+    color: white; /* Text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer;
+}
+.case-registration {
     z-index: 1;
-    padding: 20px;
-    border-radius: 5px;
-    width: 400px;
-    height: 450px;
+    max-width: 450px;
+    max-height: 200px;
+    margin: 0 auto;
+    padding-top: 1px;
+    background-color: transparent;
+  }
+  
+  .case-registration h2 {
     text-align: center;
-    color: #0c0c0c; /* Text color */
-    background-color: transparent;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-.logo{
-    position: relative;
-    left: 30%;
-    top: 35%;
-    margin-left: -6.5cm; /* Half of the width */
-    margin-top: -8.5cm;
-}
-
-
-h2 {
-    color: #0c0c0c; /* Heading color */
-}
-
-/* Form Styling */
-.form-group {
+    margin-bottom: 20px;
+    border-bottom: 5px solid #000000; /* Adjust line color and thickness as needed */
+    padding-top: 10px;
+  }
+  
+  .form-group {
     margin-bottom: 15px;
-}
-
-.btn{
-    padding: 10px;
-    color: #0e0e0e;
-    background-color: transparent;
-    cursor: pointer;
-    margin-right: 10px;
-}
-.color-icon {
-    color: #0e0e0e;
-    font-size: 20px;
-    cursor: pointer;
-}
-.color-icon:hover{
-    transition:0s;
-    color:#007bff;
-    text-shadow:0 0 120px #007bff;
-}
-label {
+  }
+  
+  label {
     display: block;
-    text-align: left;
     margin-bottom: 5px;
-    font-weight: bold;
-    color: #0c0c0c; /* Label color */
-}
-
-input[type="text"],
-input[type="password"] {
-    width: 90%;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select {
+    width: 100%;
     padding: 10px;
-    border: 1px solid #4f4f4f;
-    border-radius: 3px;
-}
-
-/* Buttons */
-button[type="submit"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .button-container {
+    display: flex; /* Use flexbox to place buttons side by side */
+    justify-content: space-between; /* Add space between buttons */
+    margin: 10px 0; /* Add margin for spacing */
+  }
+  
+  .button-container button {
+    padding: 10px 20px; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+  }
+  button[type="submit"] {
+    margin-right: 5px;
+    width: 70%;
+    padding: 10px;
     background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
+    color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-/* Links */
-p {
-    margin-top: 15px;
-}
-.sign-up{
-    padding-bottom: 10px;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
+  }
+  
+  

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo1.png';
 import {FaFacebookF} from 'react-icons/fa';
 import {FaGoogle} from 'react-icons/fa';
-import {FaGithub} from 'react-icons/fa';
 import './login.css';
 
 function LoginForm() {
@@ -70,9 +69,6 @@ function LoginForm() {
             <FaGoogle/>
             </span></a>
           </button>
-
-          
-        
         </div>
       )}
 
@@ -93,7 +89,6 @@ function LoginForm() {
               <label htmlFor="confirm-password">Confirm Password</label>
               <input type="password" id="confirm-password" required />
             </div>
-            {/* Add additional registration fields as needed */}
             <div className="form-group">
               <button type="submit">Register</button>
             </div>
@@ -104,7 +99,6 @@ function LoginForm() {
               Login
             </a>
           </p>
-          {/* Add your social login buttons here */}
         </div>
       )}
     </div>

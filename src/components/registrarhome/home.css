@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc; /* Gray background color for the sides */
+    display: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #757474;
+    color: white;
+}
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #17141b;
+    color: white;
+    
+}
+
+#logo {
+    max-width: 60px;
+    padding-left: 15px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-button {
+    padding: 10px 15px;
+    background-color: #313131;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d3cbff;
+    text-align: center;
+    padding-bottom: 120px;
+    position: relative;
+    z-index: -1;/* Center-align text within the container */
+}
+
+
+.background h1 {
+    padding-bottom: 10px;
+    border-bottom: 5px solid #000000; /* Adjust line color and thickness as needed */
+    padding-top: 10px; /* Add some spacing between h2 and p */
+}
+
+
+.background h3 {
+    max-width: 600px; /* Set a maximum width for the paragraph */
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.card-container {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center;
+    text-align: center; /* Center the cards vertically */
+    /* Set the container's height to the viewport height */
+}
+
+.card1,
+.card2,
+.card3 {
+    width: 250px;
+    height: 280px;
+    background: #d2fa3f;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0 10px; /* Add some spacing between the cards */
+    position: relative; /* Position relative for absolute positioning */
+}
+
+.card1 {
+    margin-top: -100px; /* Adjust the negative margin to pull the card up */
+}
+
+.card2 {
+    margin-top: -100px; /* Adjust the negative margin to pull the card up */
+}
+
+.card3 {
+    margin-top: -100px;
+}
+
+.card1 h4,
+.card2 h4,
+.card3 h4{
+    border-bottom: 3px solid #000000; /* Adjust line color and thickness as needed */
+    padding-top: 10px;
+}
+.card1 p,
+.card2 p,
+.card3 p{
+    padding: 05px;
+}
