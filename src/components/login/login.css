@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc; /* Gray background color for the sides */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.a4-sheet1 {
+    width: 13cm; /* A4 width */
+    height: 17cm; /* A4 height */
+    background-color: white; /* White paper color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow for the paper */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.a4-sheet2 {
+    width: 13cm; /* A4 width */
+    height: 17cm; /* A4 height */
+    background-color: white; /* White paper color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow for the paper */
+    position: absolute;
+    transform: rotate(2deg);
+    z-index: -1; /* 2-degree rotation */
+    
+    /* Centering using rotation */
+    left: 50%;
+    top: 50%;
+    margin-left: -6.5cm; /* Half of the width */
+    margin-top: -8.5cm; /* Half of the height */
+}
+
+.a4-sheet3 {
+    width: 13cm; /* A4 width */
+    height: 17cm; /* A4 height */
+    background-color: white; /* White paper color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow for the paper */
+    position: absolute;
+    transform: rotate(-2deg);
+    z-index: -1; /* 2-degree rotation */
+    
+    
+    /* Centering using rotation */
+    left: 50%;
+    top: 50%;
+    margin-left: -6.5cm; /* Half of the width */
+    margin-top: -8.5cm; /* Half of the height */
+}
+.a4-sheet4 {
+    width: 13cm; /* A4 width */
+    height: 17cm;  /* A4 height */
+    background-color: white; /* White paper color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow for the paper */
+    position: absolute;
+    transform: rotate(3deg);
+    z-index: -1; /* 2-degree rotation */
+    
+    /* Centering using rotation */
+    left: 50%;
+    top: 50%;
+    margin-left: -6.5cm; /* Half of the width */
+    margin-top: -8.5cm; /* Half of the height */
+}
+.a4-sheet5 {
+    width: 13cm; /* A4 width */
+    height: 17cm;  /* A4 height */
+    background-color: white; /* White paper color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow for the paper */
+    position: absolute;
+    transform: rotate(-3.5deg);
+    z-index: -1; /* 2-degree rotation */
+    
+    /* Centering using rotation */
+    left: 50%;
+    top: 50%;
+    margin-left: -6.5cm; /* Half of the width */
+    margin-top: -8.5cm; /* Half of the height */
+}
+.a4-sheet6 {
+    width: 13cm; /* A4 width */
+    height: 17cm;  /* A4 height */
+    background-color: white; /* White paper color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow for the paper */
+    position: absolute;
+    transform: rotate(4deg);
+    z-index: -1; /* 2-degree rotation */
+    
+    /* Centering using rotation */
+    left: 50%;
+    top: 50%;
+    margin-left: -6.5cm; /* Half of the width */
+    margin-top: -8.5cm; /* Half of the height */
+}
+.a4-sheet7 {
+    width: 13cm; /* A4 width */
+    height: 17cm;  /* A4 height */
+    background-color: white; /* White paper color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow for the paper */
+    position: absolute;
+    transform: rotate(-4-5deg);
+    z-index: -1; /* 2-degree rotation */
+    
+    /* Centering using rotation */
+    left: 50%;
+    top: 50%;
+    margin-left: -6.5cm; /* Half of the width */
+    margin-top: -8.5cm; /* Half of the height */
+}
+
+.login-container,
+.registration-container {
+    position: absolute;
+    z-index: 1;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    color: #0c0c0c; /* Text color */
+    background-color: transparent;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo{
+    position: relative;
+    left: 30%;
+    top: 35%;
+    margin-left: -6.5cm; /* Half of the width */
+    margin-top: -8.5cm;
+}
+
+
+h2 {
+    color: #0c0c0c; /* Heading color */
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn{
+    padding: 12px;
+    color: #0c0c0c;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.color-icon {
+    color: #0e0e0e;
+    font-size: 20px;
+    cursor: pointer;
+}
+.color-icon:hover{
+    transition:0s;
+    color:#007bff;
+    text-shadow:0 0 120px #007bff;
+}
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0c0c0c; /* Label color */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #4f4f4f;
+    border-radius: 3px;
+}
+
+/* Buttons */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Links */
+p {
+    margin-top: 15px;
+}
+.sign-up{
+    padding-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
