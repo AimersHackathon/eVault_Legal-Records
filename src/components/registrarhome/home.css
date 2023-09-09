@@ -37,6 +37,9 @@ body {
     color: white;
     
 }
+.navbar1 h4{
+    color: #ccc;
+}
 
 #logo {
     max-width: 60px;
@@ -87,13 +90,17 @@ body {
     text-align: center; /* Center the cards vertically */
     /* Set the container's height to the viewport height */
 }
+.card-container p{
+    color: #000000;
+    font-display: bold;
+}
 
 .card1,
 .card2,
 .card3 {
     width: 250px;
     height: 280px;
-    background: #d2fa3f;
+    background: #c9ff04;
     border-radius: 20px;
     overflow: hidden;
     z-index: 1;

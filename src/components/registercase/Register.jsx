@@ -10,8 +10,10 @@ function CaseRegistration() {
     defendant: '',
     natureOfCase: '',
     stage: '',
-    courtType: 'High Court', // Default selection
+    courtType: 'High Court',
   });
+
+  const [registeredCases, setRegisteredCases] = useState([]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,6 +24,20 @@ function CaseRegistration() {
     e.preventDefault();
     // Handle form submission here (e.g., send data to server)
     console.log(formData);
+
+    // Add the submitted case to the registeredCases array
+    setRegisteredCases([...registeredCases, formData]);
+
+    // Clear the form by resetting the formData
+    setFormData({
+      sittingDate: '',
+      suitNo: '',
+      plaintiff: '',
+      defendant: '',
+      natureOfCase: '',
+      stage: '',
+      courtType: 'High Court',
+    });
   };
 
   return (
@@ -56,6 +72,7 @@ function CaseRegistration() {
             name="suitNo"
             value={formData.suitNo}
             onChange={handleChange}
+            placeholder='eg: D2/111/21'
           />
         </div>
         <div className="form-group">
@@ -66,6 +83,7 @@ function CaseRegistration() {
             name="plaintiff"
             value={formData.plaintiff}
             onChange={handleChange}
+            placeholder='eg: THE COMPANY'
           />
         </div>
         <div className="form-group">
@@ -76,6 +94,7 @@ function CaseRegistration() {
             name="defendant"
             value={formData.defendant}
             onChange={handleChange}
+            placeholder='eg: HARVEY'
           />
         </div>
         <div className="form-group">
@@ -86,6 +105,7 @@ function CaseRegistration() {
             name="natureOfCase"
             value={formData.natureOfCase}
             onChange={handleChange}
+            placeholder='eg: BREACH OF RULE'
           />
         </div>
         <div className="form-group">
@@ -96,6 +116,7 @@ function CaseRegistration() {
             name="stage"
             value={formData.stage}
             onChange={handleChange}
+            placeholder='eg: F/M'
           />
         </div>
         <div className="form-group">
